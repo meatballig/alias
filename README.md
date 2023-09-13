@@ -2,7 +2,7 @@
 
 if [ ! -f /etc/profile.d/kubectl.sh ] ; then
 {
-curl -k https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
+curl -k https://raw.githubusercontent.com/meatballig/alias/main/.kubectl_aliases
 
 cat<<-EOF
 
@@ -29,5 +29,5 @@ fi
 cd /usr/local/bin
 for i in kubectx kubens utils.bash
 do
-        [ -f $i ] || ( curl -Ok  https://raw.githubusercontent.com/ahmetb/kubectx/master/$i && chmod +x $i )
+        [ -f $i ] || ( curl -Ok  https://raw.githubusercontent.com/meatballig/alias/main/$i && chmod +x $i )
 done
